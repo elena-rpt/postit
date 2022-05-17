@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Benvenuto!</h1>
+  <p>Inserisci la tua chiave</p>
+  <div>
+    <input #box (keyup.enter)="updateKey(box.value)" />
+    <button class="btn btn-white" (click)="updateKey(box.value)">vai</button>
+  </div>
+  <br />
+  <p>Oppure</p>
+  <div>
+    <button class="btn btn-white" (click)="getNewKey()">
+      Richiedi una chiave
+    </button>
+  </div>
+  <p *ngIf="showKey" class="mt-4">
+    La tua chiave è <strong>{{ chiave }}</strong>
+  </p>
+</div>

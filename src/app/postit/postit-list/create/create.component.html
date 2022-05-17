@@ -1,0 +1,30 @@
+<div class="form-container">
+  <div class="row px-5">
+    <div class="col-12">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-7">
+          <input #titolo placeholder="Titolo" [(ngModel)]="title" />
+        </div>
+        <div class="col-5">
+          <div class="form-check ml-4">
+            <input
+              id="checkbox1"
+              type="checkbox"
+              #important
+              [(ngModel)]="check"
+            />
+            <label for="checkbox1">Importante</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <textarea #content (click)="clean()" [(ngModel)]="text">
+            Scrivi il contenuto</textarea
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mt-4 d-flex justify-content-start">
+      <button class="btn" (click)="createPostit()">Crea</button>
+    </div>
+  </div>
+</div>

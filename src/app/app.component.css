@@ -1,0 +1,11 @@
+.navbar {
+  height: 20px;
+  padding-left: 40px;
+  font-size: 12px;
+  background-color: #84a59d !important;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: #fff !important;
+}

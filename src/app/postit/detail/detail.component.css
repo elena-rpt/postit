@@ -1,0 +1,24 @@
+.container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.elem {
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  box-shadow: 7px 10px 10px #00000030;
+  width: 500px;
+  padding: 35px;
+  position: relative;
+}
+
+p {
+  margin: 0;
+}
+
+.id {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: right;
+}

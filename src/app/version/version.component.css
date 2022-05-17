@@ -1,0 +1,24 @@
+.icon {
+  position: absolute;
+  color: rgb(78, 78, 78);
+  font-size: 22px;
+  top: 5px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  font-size: 26px;
+  top: 2px;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+}

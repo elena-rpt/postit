@@ -1,0 +1,32 @@
+<h1 class="mt-5">I tuoi post-it</h1>
+<h6 class="emptymsg" *ngIf="postit.length === 0">
+  Per ora non ci sono post-it, creane uno!
+</h6>
+<div class="center">
+  <button class="btn btn-white" (click)="toggleAdd()">{{ addButton }}</button>
+  <button class="btn btn-white" (click)="showImportant()">
+    {{ impButton }}
+  </button>
+  <button class="btn btn-white" routerLink="private">?</button>
+</div>
+<app-create
+  *ngIf="showAdd"
+  [postit]="postit"
+  [service]="service"
+  (submit)="toggleAdd()"
+></app-create>
+<div class="mt-4 row px-4">
+  <span class="col-12 col-md-4 col-lg-3 col" *ngFor="let elem of showedpostit">
+    <div
+      class="listElem"
+      [ngClass]="elem.importante ? 'important' : ''"
+      [routerLink]="['detail', elem.id]"
+    >
+      <p class="title">
+        <b>{{ elem.titolo | titlecase }}</b>
+      </p>
+      <p class="content">{{ elem.contenuto }}</p>
+      <div class="icon" (click)="deletePostit(elem.titolo)">x</div>
+    </div>
+  </span>
+</div>

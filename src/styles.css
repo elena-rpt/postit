@@ -1,0 +1,31 @@
+/* Add application styles & imports to this file! */
+body {
+  font-family: 'Roboto', sans-serif !important;
+  background-color: #f7ede2 !important;
+}
+
+input {
+  width: 60%;
+  height: 36px;
+  padding: 0 10px;
+}
+
+button {
+  padding: 5px 15px !important;
+  margin-top: -2px;
+  border-radius: 30px !important;
+  font-weight: 600;
+  text-transform: uppercase !important;
+  background-color: #84a59d !important;
+  color: #000000 !important;
+}
+
+button:hover {
+  color: #f7ede2 !important;
+}
+
+.center {
+  margin: auto !important;
+  display: block;
+  width: fit-content;
+}

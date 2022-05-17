@@ -1,0 +1,58 @@
+h1 {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 5px;
+}
+
+.col {
+  padding: 15px;
+}
+
+.listElem {
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 7px 10px 10px #00000030;
+  width: 100%;
+  padding: 25px;
+  position: relative;
+}
+
+.listElem.important {
+  border-left: 6px solid #f28482;
+}
+
+.icon {
+  position: absolute;
+  color: rgb(78, 78, 78);
+  font-size: 22px;
+  top: 5px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  font-size: 26px;
+  top: 2px;
+}
+
+p {
+  margin: 0px;
+}
+
+.emptymsg {
+  text-align: center;
+}
+
+.title {
+  display: inline;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.content {
+  margin-top: 20px;
+  font-size: 16px;
+}
